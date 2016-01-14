@@ -88,3 +88,9 @@ table .herbi {
 }
 
 td {width: 5em; height: 5em;}
+
+.btn-primary {background-color: green; border-color: green;}
+
+.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover {
+    background-color: green; border-color: green;
+}
