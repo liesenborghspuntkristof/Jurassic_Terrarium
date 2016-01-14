@@ -130,9 +130,9 @@ and open the template in the editor.
                     </tbody>
                 </table>
                 </div>
-                <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+                 <a href ="index.php" class="btn btn-default btn-sm" >
                             <span class=" glyphicon glyphicon-home" aria-hidden="true"></span> Home
-                        </button>
+                        </a>
                
                 
                 

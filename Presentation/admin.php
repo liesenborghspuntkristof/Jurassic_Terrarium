@@ -18,17 +18,13 @@ and open the template in the editor.
           <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
-    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     </head>
     <body>
-        
-            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-            <script src="js/jquery.js"></script>        
-<script src="js/bootstrap.js"></script>
-                
-            <header>
+        <header>
                 Logged in as Admin   <a href="#">  <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>  logout</a>
-            </form>
+            
             <h1>Jurassic Terrarium</h1>
         </header>    
             <div class="container">
@@ -37,9 +33,9 @@ and open the template in the editor.
                 <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Kies user
                 <span class="caret"></span></button>
                 <ul class="dropdown-menu">
-                  <li>User 1</li>
-                  <li>User 2</li>
-                  <li>User 3</li>
+                    <li><a href="#">User 1</a></li>
+                  <li><a href="#">User 1</a></li>
+                  <li><a href="#">User 1</a></li>
                 </ul>
               </div>
                 <br>
@@ -48,7 +44,6 @@ and open the template in the editor.
                 <table class="table">
                     <tbody>
                     <thead>dag *</thead>
-                    <tbody>
                             <tr><td class="plant"> </td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
                             <tr><td>1</td><td class="carni"> </td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
                             <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
@@ -63,7 +58,6 @@ and open the template in the editor.
                 <table class="table">
                     <tbody>
                     <thead>dag *</thead>
-                    <tbody>
                             <tr><td class="plant"> </td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
                             <tr><td>1</td><td class="carni"> </td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
                             <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
@@ -78,7 +72,90 @@ and open the template in the editor.
                 <table class="table">
                     <tbody>
                     <thead>dag *</thead>
+                            <tr><td class="plant"> </td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                            <tr><td>1</td><td class="carni"> </td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                            <tr><td>1</td><td>2</td><td>3</td><td class="herbi"> </td><td>5</td><td>6</td></tr>
+                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                            </tbody>
+                    </tbody>
+                </table>
+                </div>
+                <div class="col-lg-4 overview">
+                <table class="table">
                     <tbody>
+                    <thead>dag *</thead>
+                            <tr><td class="plant"> </td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                            <tr><td>1</td><td class="carni"> </td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                            <tr><td>1</td><td>2</td><td>3</td><td class="herbi"> </td><td>5</td><td>6</td></tr>
+                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                            </tbody>
+                    </tbody>
+                </table>
+                </div>
+                <div class="col-lg-4 overview">
+                <table class="table">
+                    <tbody>
+                    <thead>dag *</thead>
+                            <tr><td class="plant"> </td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                            <tr><td>1</td><td class="carni"> </td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                            <tr><td>1</td><td>2</td><td>3</td><td class="herbi"> </td><td>5</td><td>6</td></tr>
+                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                            </tbody>
+                    </tbody>
+                </table>
+                </div>
+                <div class="col-lg-4 overview">
+                <table class="table">
+                    <tbody>
+                    <thead>dag *</thead>
+                            <tr><td class="plant"> </td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                            <tr><td>1</td><td class="carni"> </td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                            <tr><td>1</td><td>2</td><td>3</td><td class="herbi"> </td><td>5</td><td>6</td></tr>
+                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                            </tbody>
+                    </tbody>
+                </table>
+                </div>
+                <div class="col-lg-4 overview">
+                <table class="table">
+                    <tbody>
+                    <thead>dag *</thead>
+                            <tr><td class="plant"> </td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                            <tr><td>1</td><td class="carni"> </td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                            <tr><td>1</td><td>2</td><td>3</td><td class="herbi"> </td><td>5</td><td>6</td></tr>
+                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                            </tbody>
+                    </tbody>
+                </table>
+                </div>
+                <div class="col-lg-4 overview">
+                <table class="table">
+                    <tbody>
+                    <thead>dag *</thead>
+                            <tr><td class="plant"> </td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                            <tr><td>1</td><td class="carni"> </td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                            <tr><td>1</td><td>2</td><td>3</td><td class="herbi"> </td><td>5</td><td>6</td></tr>
+                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                            </tbody>
+                    </tbody>
+                </table>
+                </div>
+                <div class="col-lg-4 overview">
+                <table class="table">
+                    <tbody>
+                    <thead>dag *</thead>
                             <tr><td class="plant"> </td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
                             <tr><td>1</td><td class="carni"> </td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
                             <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
@@ -90,61 +167,6 @@ and open the template in the editor.
                 </table>
                 </div>
                 
-                <div class="col-lg-4 overview">
-                <table class="table">
-                    <tbody>
-                    <thead>dag *</thead>
-                    <tbody>
-                            <tr><td class="plant"> </td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td class="carni"> </td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td>2</td><td>3</td><td class="herbi"> </td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            </tbody>
-                    </tbody>
-                </table>
-                </div>
-                
-                <div class="col-lg-4 overview">
-                <table class="table">
-                    <tbody>
-                    <thead>dag *</thead>
-                    <tbody>
-                            <tr><td class="plant"> </td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td class="carni"> </td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td>2</td><td>3</td><td class="herbi"> </td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            </tbody>
-                    </tbody>
-                </table>
-                </div>
-                <div class="col-lg-4 overview">
-                <table class="table">
-                    <tbody>
-                    <thead>dag *</thead>
-                    <tbody>
-                            <tr><td class="plant"> </td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td class="carni"> </td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td>2</td><td>3</td><td class="herbi"> </td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            </tbody>
-                    </tbody>
-                </table>
-                </div>
-                <section id="TerrariumNav" class="col-md-6">
-                    <p><button type="button" class="btn btn-default" aria-label="Left Align">
-                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"> </span><br>Previous
-                    </button>
-                    <button type="button" class="btn btn-default" aria-label="Left Align">
-                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><br>Next</button></p> 
-                    <br>
-                    
-                </section>
                 
             </div>
         <?php

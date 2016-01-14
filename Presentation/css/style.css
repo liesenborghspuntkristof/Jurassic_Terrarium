@@ -7,77 +7,82 @@ and open the template in the editor.
     Created on : Jan 13, 2016, 2:12:19 PM
     Author     : annemie.roelants
 */
-body{
-background-image: url('../img/52.jpg');
+
+body {
+    //background-image: url('../img/52.jpg');
+    background-color: #9B7452;
+    color: white;
 }
-@font-face{
+@font-face {
     font-family: JurassicPark;
     src: url('../fonts/JurassicPark.ttf');
 }
-
-.container{
-    width:80%;
-    outline:1px solid red;
-    background-color:white;
-    padding:1em 3em;
+.container {
+    width: 80%;
+    //outline:1px solid red;
+    //background-color:white;
+    padding: 1em 3em;
 }
-header{
+header {
     background-color: #222;
-    padding:1% 7% 1% 0;
+    padding: 1% 7% 1% 0;
     text-align: right;
-    color:white;
-    border-bottom:10px solid red;
+    color: white;
+    border-bottom: 10px solid red;
     margin-bottom: 2%;
 }
-header label{
-    color:white;
-    margin-left:1em;
+header label {
+    color: white;
+    margin-left: 1em;
 }
-header h1{
+header h1 {
     font-family: JurassicPark;
     text-align: center;
     font-size: 10em;
 }
-
-header a,header a:active,header a:hover,header a:visited{
-    color:yellow;
+header a,
+header a:active,
+header a:hover,
+header a:visited {
+    color: yellow;
 }
-
-.overview{
+.overview {
     padding-right: 2em;
 }
-
-.container h1{
+.container h1 {
     margin-bottom: 2%;
 }
-
 table{
     border:2px solid transparent;
     background-image: url('../img/background.png');
     background-repeat: repeat;
     border-collapse: separate;
-    -webkit-border-image:url('../img/border.png') 50 round;
-    -o-border-image:url('../img/border.png') 50 round;
-    border-image: url('../img/border.png') 50 round;
+border-style: solid;
+border-width: 25px 25px 25px 25px;
+-moz-border-image: url(../img/border_border.png) 48 39 round;
+-webkit-border-image: url(../img/border_border.png) 48 39 round;
+-o-border-image: url(../img/border_border.png) 48 39 round;
+border-image: url(../img/border_border.png) 48 39 round
     
 }
-.table>tbody>tr>td{border:none;}
-
-  table .plant{
-      background-image: url('../img/Bush.png');
-      background-repeat: no-repeat;
-      background-size: 20%;
-      background-position: center center;
-  }
-   table .carni{
-      background-image: url('../img/Velo.png');
-      background-repeat: no-repeat;
-      background-size: 20%;
-      background-position: center center;
-  }
-   table .herbi{
-      background-image: url('../img/Tric.png');
-      background-repeat: no-repeat;
-      background-size: 20%;
-      background-position: center center;
-  }
+.table>tbody>tr>td {
+    border: #1BA333 dashed thin;
+}
+table .plant {
+    background-image: url('../img/Sprout.png');
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center center;
+}
+table .carni {
+    background-image: url('../img/Velo.png');
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center center;
+}
+table .herbi {
+    background-image: url('../img/Tric.png');
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center center;
+}
