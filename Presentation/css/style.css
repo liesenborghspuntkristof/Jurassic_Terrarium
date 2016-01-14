@@ -1,0 +1,78 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 13, 2016, 2:12:19 PM
+    Author     : annemie.roelants
+*/
+@font-face{
+    font-family: JurassicPark;
+    src: url('../fonts/JurassicPark.ttf');
+}
+
+.container{
+    width:80%;
+    
+}
+header{
+    background-color: #222;
+    padding:1% 7% 1% 0;
+    text-align: right;
+    color:white;
+    border-bottom:10px solid red;
+    margin-bottom: 2%;
+}
+header label{
+    color:white;
+    margin-left:1em;
+}
+header h1{
+    font-family: JurassicPark;
+    text-align: center;
+    font-size: 10em;
+}
+
+a,a:active,a:hover,a:visited{
+    color:#209B89;
+}
+
+.overview{
+    padding-right: 2em;
+}
+
+.container h1{
+    margin-bottom: 2%;
+}
+
+table{
+    border:2px solid transparent;
+    background-image: url('../img/background.png');
+    background-repeat: repeat;
+    border-collapse: separate;
+    -webkit-border-image:url('../img/border.png') 50 round;
+    -o-border-image:url('../img/border.png') 50 round;
+    border-image: url('../img/border.png') 50 round;
+    
+}
+.table>tbody>tr>td{border:none;}
+
+  table .plant{
+      background-image: url('../img/Bush.png');
+      background-repeat: no-repeat;
+      background-size: 20%;
+      background-position: center center;
+  }
+   table .carni{
+      background-image: url('../img/Velo.png');
+      background-repeat: no-repeat;
+      background-size: 20%;
+      background-position: center center;
+  }
+   table .herbi{
+      background-image: url('../img/Tric.png');
+      background-repeat: no-repeat;
+      background-size: 20%;
+      background-position: center center;
+  }
