@@ -71,18 +71,20 @@ border-image: url(../img/border_border.png) 48 39 round
 table .plant {
     background-image: url('../img/Sprout.png');
     background-repeat: no-repeat;
-    background-size: 40%;
+    background-size: 60%;
     background-position: center center;
 }
 table .carni {
     background-image: url('../img/Velo.png');
     background-repeat: no-repeat;
-    background-size: 40%;
+    background-size: 60%;
     background-position: center center;
 }
 table .herbi {
     background-image: url('../img/Tric.png');
     background-repeat: no-repeat;
-    background-size: 40%;
+    background-size: 60%;
     background-position: center center;
 }
+
+td {width: 5em; height: 5em;}

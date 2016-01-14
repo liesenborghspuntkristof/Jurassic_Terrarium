@@ -50,7 +50,7 @@ and open the template in the editor.
     <div class="container">
         <h1>Day 1</h1>
         <div class="row">
-            <div class="col-lg-8">
+            <div class="col-lg-4">
                 <table class="table text-center">
                     <tbody>
                         <tr>
