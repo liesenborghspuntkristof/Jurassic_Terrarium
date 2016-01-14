@@ -44,7 +44,8 @@ and open the template in the editor.
               </div>
                 <br>
                 
-                <table class="table col-md-6">
+                <div class="col-lg-4 overview">
+                <table class="table">
                     <tbody>
                     <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
                     <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
@@ -54,7 +55,9 @@ and open the template in the editor.
                     <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
                     </tbody>
                 </table>
-                <table class="table col-md-6">
+                </div>
+                  <div class="col-lg-4 overview">
+                <table class="table">
                     <tbody>
                     <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
                     <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
@@ -64,6 +67,46 @@ and open the template in the editor.
                     <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
                     </tbody>
                 </table>
+                </div>
+                  <div class="col-lg-4 overview">
+                <table class="table">
+                    <tbody>
+                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                    </tbody>
+                </table>
+                </div>
+                
+                  <div class="col-lg-4 overview">
+                <table class="table">
+                    <tbody>
+                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                    </tbody>
+                </table>
+                </div>
+                
+                <div class="col-lg-4 overview">
+                <table class="table">
+                    <tbody>
+                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                    </tbody>
+                </table>
+                </div>
+                
                 <section id="TerrariumNav" class="col-md-6">
                     <p><button type="button" class="btn btn-default" aria-label="Left Align">
                         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"> </span><br>Previous

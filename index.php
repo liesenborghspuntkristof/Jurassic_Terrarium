@@ -27,48 +27,59 @@ and open the template in the editor.
             <!-- Include all compiled plugins (below), or include individual files as needed -->
             <script src="js/bootstrap.min.js"></script>
                 
-            <header>
-            <form class="form-inline">
-               
-               <div class="form-group">
-                    <label for="Naam">Username</label>
-                    <input type="text" class="form-control" id="naam" name="naam" placeholder="Naam">
-                </div> 
-                <div class="form-group">
-                    <label for="Naam">Wachtwoord</label>
-                    <input type="password" class="form-control" id="naam" name="wachtwoord" placeholder="Wachtwoord">
+            <header
+                <div id="login">
+                    <form class="form-inline">
+
+                      <div class="form-group">
+                           <label for="Naam">Username</label>
+                           <input type="text" class="form-control" id="naam" name="naam" placeholder="Naam">
+                       </div> 
+                       <div class="form-group">
+                           <label for="Naam">Wachtwoord</label>
+                           <input type="password" class="form-control" id="naam" name="wachtwoord" placeholder="Wachtwoord">
+                       </div>
+                       <div class="form-group">
+                           <button type="submit" class="btn btn-default">Submit</button>
+                       </div>
+                   </form> 
                 </div>
-                <div class="form-group">
-                    <button type="submit" class="btn btn-default">Submit</button>
-                </div>
-            </form>
-        </header>    
+                <h1>Jurassic Terrarium</h1>
+            </header>    
             <div class="container">
                 <h1>Day 1</h1>
-                <div class="col-md-10"> 
-                <table class="table" id="TableToday">
-                    <tbody>
-                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                    </tbody>
-                </table>
+                <div class="row">
+                    <div class="col-lg-8"> 
+                        <table class="table">
+                            <tbody>
+                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                            </tbody>
+                        </table>
+                        <section class="text-center">
+                        <button type="button" class="btn btn-default" aria-label="Left Align">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"> </span><br>Previous
+                        </button>
+                        <button type="button" class="btn btn-default" aria-label="Left Align">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><br>Next 
+                        </button> 
+                        </section>
+                    </div>
+                    
+                    
+                    <div id="TerrariumNav" class="col-lg-2 col-lg-offset-1">
+                        <button type="button" class="btn btn-default btn-sm">
+                            <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Overview</button>
+                        <br><br>
+                        <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+                            <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> Create new terrarium
+                        </button>
+                    </div>
                 </div>
-                <section id="TerrariumNav" class="col-md-6">
-                    <p><button type="button" class="btn btn-default" aria-label="Left Align">
-                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"> </span><br>Previous
-                    </button>
-                    <button type="button" class="btn btn-default" aria-label="Left Align">
-                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><br>Next 
-                    </button> <button type="button" class="btn btn-default btn-lg">Overview</button></p> 
-                    <br>
-                    <button type="button" class="btn btn-default btn-lg" aria-label="Left Align">
-                        <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> <br>Create new terrarium
-                    </button>
-                </section>
             </div>
         <?php
         // put your code here
