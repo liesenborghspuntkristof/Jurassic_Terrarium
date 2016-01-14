@@ -10,7 +10,7 @@ and open the template in the editor.
         <title>Jurrasic Terrarium Home</title>
          <!-- Bootstrap -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="Presentation/css/style.css" rel="stylesheet" type="text/css"/>
         <link href='https://fonts.googleapis.com/css?family=Roboto:100,400' rel='stylesheet' type='text/css'>
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -29,8 +29,9 @@ and open the template in the editor.
                 
             <header>
                 Logged in as Admin   <a href="#">  <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>  logout</a>
-            </form>
-        </header>    
+            <h1>Jurassic Terrarium</h1>
+            </header>    
+            
             <div class="container">
                 <h1>Admin Panel</h1>
                <div class="dropdown">

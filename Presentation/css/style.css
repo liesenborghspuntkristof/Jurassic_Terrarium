@@ -7,6 +7,9 @@ and open the template in the editor.
     Created on : Jan 13, 2016, 2:12:19 PM
     Author     : annemie.roelants
 */
+body{
+background-image: url('../img/52.jpg');
+}
 @font-face{
     font-family: JurassicPark;
     src: url('../fonts/JurassicPark.ttf');
@@ -14,7 +17,9 @@ and open the template in the editor.
 
 .container{
     width:80%;
-    
+    outline:1px solid red;
+    background-color:white;
+    padding:1em 3em;
 }
 header{
     background-color: #222;
@@ -34,8 +39,8 @@ header h1{
     font-size: 10em;
 }
 
-a,a:active,a:hover,a:visited{
-    color:#209B89;
+header a,header a:active,header a:hover,header a:visited{
+    color:yellow;
 }
 
 .overview{

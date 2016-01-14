@@ -72,8 +72,8 @@ and open the template in the editor.
                     
                     
                     <div id="TerrariumNav" class="col-lg-2 col-lg-offset-1">
-                        <button type="button" class="btn btn-default btn-sm">
-                            <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Overview</button>
+                        <a href class="btn btn-default btn-sm">
+                            <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Overview</a>
                         <br><br>
                         <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
                             <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> Create new terrarium
