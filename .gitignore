@@ -3,3 +3,4 @@ git *.tmp
 **/nbproject/
 **/.idea/
 **/.id/
+terrarium_tmp.php

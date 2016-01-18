@@ -18,10 +18,12 @@ body {
     src: url('../fonts/JurassicPark.ttf');
 }
 .container {
-    width: 80%;
+    min-width: 80%;
     //outline:1px solid red;
     //background-color:white;
     padding: 1em 3em;
+    
+    
 }
 header {
     background-color: #222;
@@ -65,6 +67,7 @@ header a:visited {
     border-image: url(../img/border_border.png) 48 39 round;
    margin-left:auto; 
     margin-right:auto;
+    overflow:scroll;
 }
 .overview{
     float:left;

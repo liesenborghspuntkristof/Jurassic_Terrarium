@@ -13,5 +13,46 @@
  * @author kristof.liesenborghs
  */
 abstract class Organism implements Life {
-    //put your code here
+    
+    private $positionX; 
+    private $positionY;
+    private $lifeForce; 
+    
+    public function __construct($positionX, $positionY) {
+        $this->positionX = $positionX;
+        $this->positionY = $positionY;
+    }
+
+    function getPositionX() {
+        return $this->positionX;
+    }
+
+    function getLifeForce() {
+        return $this->lifeForce;
+    }
+
+    function getPositionY() {
+        return $this->positionY;
+    }
+
+    function setPositionX($positionX) {
+        $this->positionX = $positionX;
+    }
+
+    function setPositionY($positionY) {
+        $this->positionY = $positionY;
+    }
+
+    function setLifeForce($lifeForce) {
+        $this->lifeForce = $lifeForce;
+    }
+
+    abstract public function spawn(); 
+    
+    public function expire() {
+    // object's lifeForce is set to zero
+    // this allows external lifeForce check to unset the object
+    // @author Sven.Croon
+        $this->lifeForce = 0;
+    }
 }

@@ -21,7 +21,7 @@ if (isset($_GET["action"]) && $_GET["action"] == "simulate") {
     }    
     $matrixservice= new MatrixService();
     $matrix=$matrixservice->createStartMatrix($plants, $carnivores, $herbivores, $_SESSION["dimension"]);
-    header("location: HomeMatrixController.php");
+    include_once 'Presentation/home.php';
     
 }
 

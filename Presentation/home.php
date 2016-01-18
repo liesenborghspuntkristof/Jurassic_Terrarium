@@ -100,14 +100,14 @@ and open the template in the editor.
                        </button>-->
                 </div>
             </div>
-            <div class="text-center">
+            <div class="text-center" >
                 <h1>Day 1</h1>
 
                 <table class="tables text-center">
                     <tbody>
                         <?php for ($i = 0; $i < $_SESSION['dimension']; $i++) { ?>
                             <tr><?php for ($j = 0; $j < $_SESSION['dimension']; $j++) { ?>
-                                    <td class="<?php $matrix[$i][$j]; ?>"></td>
+                                    <td class="<?php echo $matrix[$i][$j]; ?>"></td>
                                     <?php }
                                 ?>
                             </tr>
