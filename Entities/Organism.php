@@ -41,8 +41,8 @@ abstract class Organism implements Life {
 
     abstract public function spawn(); 
     
-    public function expire($position) {
-        $position = null;
-        return $position; 
+    public function expire() {
+
+ 
     }
 }
