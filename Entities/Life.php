@@ -12,5 +12,9 @@
  * @author kristof.liesenborghs
  */
 interface Life {
-    //put your code here
+    
+    public function spawn(); 
+    
+    public function expire(); 
+    
 }
