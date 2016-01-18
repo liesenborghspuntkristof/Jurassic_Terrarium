@@ -15,25 +15,35 @@
 
 abstract class Organism implements Life {
     
-    private $position; 
+    private $positionX; 
+    private $positionY;
     private $lifeForce; 
     
-    public function __construct($position, $lifeForce) {
+    public function __construct($positionX, $positionY, $lifeForce) {
         $this->position = $position;
         $this->lifeForce = $lifeForce; 
     }
-            
-    function getPosition() {
-        return $this->position;
+    function getPositionX() {
+        return $this->positionX;
     }
-
-    function getLifeForce() {
+    
+        function getLifeForce() {
         return $this->lifeForce;
     }
 
-    function setPosition($position) {
-        $this->position = $position;
+    function getPositionY() {
+        return $this->positionY;
     }
+
+    function setPositionX($positionX) {
+        $this->positionX = $positionX;
+    }
+
+    function setPositionY($positionY) {
+        $this->positionY = $positionY;
+    }
+
+    
 
     function setLifeForce($lifeForce) {
         $this->lifeForce = $lifeForce;
