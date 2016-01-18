@@ -12,7 +12,6 @@
  *
  * @author kristof.liesenborghs
  */
-
 abstract class Organism implements Life {
     
     private $positionX; 
@@ -23,10 +22,11 @@ abstract class Organism implements Life {
         $this->positionX = $positionX;
         $this->positionY = $positionY;
     }
+
     function getPositionX() {
         return $this->positionX;
     }
-    
+
     function getLifeForce() {
         return $this->lifeForce;
     }
@@ -43,8 +43,6 @@ abstract class Organism implements Life {
         $this->positionY = $positionY;
     }
 
-    
-
     function setLifeForce($lifeForce) {
         $this->lifeForce = $lifeForce;
     }
@@ -52,7 +50,9 @@ abstract class Organism implements Life {
     abstract public function spawn(); 
     
     public function expire() {
-
- 
+    // object's lifeForce is set to zero
+    // this allows external lifeForce check to unset the object
+    // @author Sven.Croon
+        $this->lifeForce = 0;
     }
 }
