@@ -13,5 +13,10 @@
  * @author kristof.liesenborghs
  */
 abstract class Organism implements Life {
-    //put your code here
+    public function expire() {
+    // expire method is called when an organism dies
+    // object is not killed (unset), but lifeForce attribute is set to zero.
+    // allows possible future requirements (e.g. tracking of dead organisms)
+        $this->lifeForce = 0;
+    }
 }

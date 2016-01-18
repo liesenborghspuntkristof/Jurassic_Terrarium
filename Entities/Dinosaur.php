@@ -12,5 +12,11 @@
  * @author kristof.liesenborghs
  */
 abstract class Dinosaur implements Animal{
-    //put your code here
+    public function eat($diner, $food) {
+    // @author Sven Croon
+    // $diner is the object that eats
+    // $food is the object that gets eaten        
+        $diner->lifeForce += $food->lifeForce;
+        $food->expire();
+    }
 }
