@@ -14,9 +14,9 @@
  */
 abstract class Organism implements Life {
     
-    private $positionX; 
-    private $positionY;
-    private $lifeForce; 
+    protected $positionX;
+    protected $positionY;
+    protected $lifeForce;
     
     public function __construct($positionX, $positionY) {
         $this->positionX = $positionX;

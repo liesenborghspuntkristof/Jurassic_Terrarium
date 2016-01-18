@@ -1,22 +1,26 @@
+
 <?php
 //Dinosaur.php
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
-/**
- * Description of Dinosaur
- *
- * @author kristof.liesenborghs
- */
-abstract class Dinosaur implements Animal{
-    public function eat($diner, $food) {
+abstract class Dinosaur extends organism implements Animal
+
+{
+    public function eat($food)
     // @author Sven.Croon
     // $diner is the object that eats
-    // $food is the object that gets eaten        
-        $diner->lifeForce += $food->lifeForce;
+    // $food is the object that gets eaten
+        //@refactor by Gilles
+        // Used Setter to add to this Dinosaurs lifeforce
+    {  
+        $this->setLifeForce($this->lifeForce += $food->lifeForce);
         $food->expire();
     }
+
+    public function move($newPosX, $newPosY)
+    // object moves to new position
+    {
+        $this->positionX = $newPosX;
+        $this->positionY = $newPosY;
+    }
 }
+

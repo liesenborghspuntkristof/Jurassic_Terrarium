@@ -14,9 +14,9 @@
  */
 interface Animal {
         
-    public function move(); 
+    public function move($newPosX, $newPosY);
     
-    public function eat(); 
+    public function eat($food);
     
 }
 

@@ -12,5 +12,7 @@
  * @author kristof.liesenborghs
  */
 class Herbivore extends Dinosaur{
-    //put your code here
+    public function mate() {
+        Organism::spawn("herbivore");
+    }
 }
