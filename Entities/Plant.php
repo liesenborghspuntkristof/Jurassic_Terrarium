@@ -12,5 +12,7 @@
  * @author kristof.liesenborghs
  */
 class Plant extends Organism {
-    //put your code here
+    function spawn() {
+        $this->lifeforce = 1;
+    }
 }
