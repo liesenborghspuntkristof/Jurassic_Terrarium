@@ -52,7 +52,8 @@ abstract class Organism implements Life {
     abstract public function spawn(); 
     
     public function expire() {
-
- 
+    // expire function is called when an organism dies
+    // author Sven Croon
+        unset($this);
     }
 }
