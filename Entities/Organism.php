@@ -12,11 +12,47 @@
  *
  * @author kristof.liesenborghs
  */
+
 abstract class Organism implements Life {
+    
+    private $positionX; 
+    private $positionY;
+    private $lifeForce; 
+    
+    public function __construct($positionX, $positionY, $lifeForce) {
+        $this->position = $position;
+        $this->lifeForce = $lifeForce; 
+    }
+    function getPositionX() {
+        return $this->positionX;
+    }
+    
+        function getLifeForce() {
+        return $this->lifeForce;
+    }
+
+    function getPositionY() {
+        return $this->positionY;
+    }
+
+    function setPositionX($positionX) {
+        $this->positionX = $positionX;
+    }
+
+    function setPositionY($positionY) {
+        $this->positionY = $positionY;
+    }
+
+    
+
+    function setLifeForce($lifeForce) {
+        $this->lifeForce = $lifeForce;
+    }
+
+    abstract public function spawn(); 
+    
     public function expire() {
-    // expire method is called when an organism dies
-    // object is not killed (unset), but lifeForce attribute is set to zero.
-    // allows possible future requirements (e.g. tracking of dead organisms)
-        $this->lifeForce = 0;
+
+ 
     }
 }
