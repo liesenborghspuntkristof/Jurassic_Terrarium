@@ -13,5 +13,10 @@
  * @author kristof.liesenborghs
  */
 interface Animal {
-    //put your code here
+        
+    public function move(); 
+    
+    public function eat(); 
+    
 }
+
