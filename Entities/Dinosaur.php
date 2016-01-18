@@ -11,12 +11,21 @@
  *
  * @author kristof.liesenborghs
  */
-abstract class Dinosaur implements Animal{
-    public function eat($diner, $food) {
+abstract class Dinosaur implements Animal
+{
+    public function eat($diner, $food)
     // @author Sven.Croon
     // $diner is the object that eats
-    // $food is the object that gets eaten        
+    // $food is the object that gets eaten          
+    {  
         $diner->lifeForce += $food->lifeForce;
         $food->expire();
+    }
+
+    public function move($newPosX, $newPosY)
+    // object moves to new position
+    {
+        $this->positionX = $newPosX;
+        $this->positionY = $newPosY;
     }
 }
