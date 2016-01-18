@@ -52,45 +52,60 @@ header a:visited {
 .container h1 {
     margin-bottom: 2%;
 }
-table{
+.tables{
     border:2px solid transparent;
     background-image: url('../img/background.png');
     background-repeat: repeat;
     border-collapse: separate;
-border-style: solid;
-border-width: 25px 25px 25px 25px;
--moz-border-image: url(../img/border_border.png) 48 39 round;
--webkit-border-image: url(../img/border_border.png) 48 39 round;
--o-border-image: url(../img/border_border.png) 48 39 round;
-border-image: url(../img/border_border.png) 48 39 round
-    
+    border-style: solid;
+    border-width: 25px 25px 25px 25px;
+    -moz-border-image: url(../img/border_border.png) 48 39 round;
+    -webkit-border-image: url(../img/border_border.png) 48 39 round;
+    -o-border-image: url(../img/border_border.png) 48 39 round;
+    border-image: url(../img/border_border.png) 48 39 round;
+   margin-left:auto; 
+    margin-right:auto;
 }
-.table>tbody>tr>td {
+.overview{
+    float:left;
+    margin:1em;
+     
+}
+.tables>tbody>tr>td {
     border: #1BA333 dashed thin;
 }
-table .plant {
+.tables .plant {
     background-image: url('../img/Sprout.png');
     background-repeat: no-repeat;
     background-size: 60%;
     background-position: center center;
 }
-table .carni {
+.tables .carni {
     background-image: url('../img/Velo.png');
     background-repeat: no-repeat;
     background-size: 60%;
     background-position: center center;
 }
-table .herbi {
+.tables .herbi {
     background-image: url('../img/Tric.png');
     background-repeat: no-repeat;
     background-size: 60%;
     background-position: center center;
 }
 
-td {width: 5em; height: 5em;}
+td {width: 5em; height: 5em;display: inline-block;}
 
 .btn-primary {background-color: green; border-color: green;}
 
 .btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover {
     background-color: green; border-color: green;
 }
+
+.prevnext{
+    width: 6em;
+}
+#adminSettings
+{
+    margin-bottom: 2%;
+}
+

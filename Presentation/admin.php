@@ -8,7 +8,7 @@ and open the template in the editor.
     <head>
         <meta charset="UTF-8">
         <title>Jurrasic Terrarium Home</title>
-         <!-- Bootstrap -->
+        <!-- Bootstrap -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
         <link href='https://fonts.googleapis.com/css?family=Roboto:100,400' rel='stylesheet' type='text/css'>
@@ -23,152 +23,207 @@ and open the template in the editor.
     </head>
     <body>
         <header>
-                Logged in as Admin   <a href="#">  <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>  logout</a>
-            
+            Logged in as Admin   <a href="#">  <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>  logout</a>
+
             <h1>Jurassic Terrarium</h1>
         </header>    
-            <div class="container">
-                <h1>Admin Panel</h1>
-               <div class="dropdown">
-                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Kies user
-                <span class="caret"></span></button>
-                <ul class="dropdown-menu">
-                    <li><a href="#">User 1</a></li>
-                  <li><a href="#">User 1</a></li>
-                  <li><a href="#">User 1</a></li>
-                </ul>
-              </div>
+        <div class="container">
+            <h1>Admin Panel</h1>
+            <section id="adminSettings">
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Kies user
+                        <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">User 1</a></li>
+                        <li><a href="#">User 1</a></li>
+                        <li><a href="#">User 1</a></li>
+                    </ul>
+                </div>  
                 <br>
-                
-                <div class="col-lg-4 overview">
-                <table class="table">
+                <p><b>Dimension:</b> ** </p>
+                 <p><b>Start amount carnivores:</b> ** </p>
+                 <p><b>Start amount plants:</b> ** </p>
+                 <p><b>Start amount herbivores:</b> ** </p>
+                 <p><b>Amount of simulation days:</b> ** </p>
+            </section>
+            <div class="overview">
+                <table class="tables">
+                    <thead><h2>day 111</h2></thead>
                     <tbody>
-                    <thead>dag *</thead>
-                            <tr><td class="plant"> </td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td class="carni"> </td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td>2</td><td>3</td><td class="herbi"> </td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            </tbody>
+
+                        <tr><td class="plant"> </td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>6</td></tr>
+                        <tr><td>1</td><td class="carni"> </td><td>3</td><td>4</td><td>5</td><td>6</td><td>6</td></tr>
+                        <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>6</td></tr>
+                        <tr><td>1</td><td>2</td><td>3</td><td class="herbi"> </td><td>5</td><td>6</td><td>6</td></tr>
+                        <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>6</td></tr>
+                        <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>6</td></tr>
+                        <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>6</td></tr>
                     </tbody>
+
                 </table>
-                </div>
-                <div class="col-lg-4 overview">
-                <table class="table">
-                    <tbody>
-                    <thead>dag *</thead>
-                            <tr><td class="plant"> </td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td class="carni"> </td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td>2</td><td>3</td><td class="herbi"> </td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            </tbody>
-                    </tbody>
-                </table>
-                </div>
-                <div class="col-lg-4 overview">
-                <table class="table">
-                    <tbody>
-                    <thead>dag *</thead>
-                            <tr><td class="plant"> </td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td class="carni"> </td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td>2</td><td>3</td><td class="herbi"> </td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            </tbody>
-                    </tbody>
-                </table>
-                </div>
-                <div class="col-lg-4 overview">
-                <table class="table">
-                    <tbody>
-                    <thead>dag *</thead>
-                            <tr><td class="plant"> </td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td class="carni"> </td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td>2</td><td>3</td><td class="herbi"> </td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            </tbody>
-                    </tbody>
-                </table>
-                </div>
-                <div class="col-lg-4 overview">
-                <table class="table">
-                    <tbody>
-                    <thead>dag *</thead>
-                            <tr><td class="plant"> </td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td class="carni"> </td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td>2</td><td>3</td><td class="herbi"> </td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            </tbody>
-                    </tbody>
-                </table>
-                </div>
-                <div class="col-lg-4 overview">
-                <table class="table">
-                    <tbody>
-                    <thead>dag *</thead>
-                            <tr><td class="plant"> </td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td class="carni"> </td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td>2</td><td>3</td><td class="herbi"> </td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            </tbody>
-                    </tbody>
-                </table>
-                </div>
-                <div class="col-lg-4 overview">
-                <table class="table">
-                    <tbody>
-                    <thead>dag *</thead>
-                            <tr><td class="plant"> </td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td class="carni"> </td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td>2</td><td>3</td><td class="herbi"> </td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            </tbody>
-                    </tbody>
-                </table>
-                </div>
-                <div class="col-lg-4 overview">
-                <table class="table">
-                    <tbody>
-                    <thead>dag *</thead>
-                            <tr><td class="plant"> </td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td class="carni"> </td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td>2</td><td>3</td><td class="herbi"> </td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            </tbody>
-                    </tbody>
-                </table>
-                </div>
-                <div class="col-lg-4 overview">
-                <table class="table">
-                    <tbody>
-                    <thead>dag *</thead>
-                            <tr><td class="plant"> </td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td class="carni"> </td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td>2</td><td>3</td><td class="herbi"> </td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                            </tbody>
-                    </tbody>
-                </table>
-                </div>
-                
-                
             </div>
+                <div class="overview">
+                    <table class="tables">
+                        <thead><h2>day 111</h2></thead>
+                        <tbody>
+
+                            <tr><td class="plant"> </td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>6</td></tr>
+                            <tr><td>1</td><td class="carni"> </td><td>3</td><td>4</td><td>5</td><td>6</td><td>6</td></tr>
+                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>6</td></tr>
+                            <tr><td>1</td><td>2</td><td>3</td><td class="herbi"> </td><td>5</td><td>6</td><td>6</td></tr>
+                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>6</td></tr>
+                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>6</td></tr>
+                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>6</td></tr>
+                        </tbody>
+
+                    </table>
+                    </div>
+                    <div class="overview">
+                        <table class="tables">
+                            <thead><h2>day 111</h2></thead>
+                            <tbody>
+
+                                <tr><td class="plant"> </td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>6</td></tr>
+                                <tr><td>1</td><td class="carni"> </td><td>3</td><td>4</td><td>5</td><td>6</td><td>6</td></tr>
+                                <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>6</td></tr>
+                                <tr><td>1</td><td>2</td><td>3</td><td class="herbi"> </td><td>5</td><td>6</td><td>6</td></tr>
+                                <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>6</td></tr>
+                                <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>6</td></tr>
+                                <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>6</td></tr>
+                            </tbody>
+
+                        </table>
+                        </div>
+            
+                        <div class="overview">
+                            <table class="tables">
+                                <thead><h2>day 111</h2></thead>
+                                <tbody>
+
+                                    <tr><td class="plant"> </td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>6</td></tr>
+                                    <tr><td>1</td><td class="carni"> </td><td>3</td><td>4</td><td>5</td><td>6</td><td>6</td></tr>
+                                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>6</td></tr>
+                                    <tr><td>1</td><td>2</td><td>3</td><td class="herbi"> </td><td>5</td><td>6</td><td>6</td></tr>
+                                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>6</td></tr>
+                                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>6</td></tr>
+                                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>6</td></tr>
+                                </tbody>
+
+                            </table>
+                        </div>
+                        <div class="overview">
+                            <table class="tables">
+                                <thead><h2>day 111</h2></thead>
+                                <tbody>
+                                    <tr><td class="plant"> </td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                                    <tr><td>1</td><td class="carni"> </td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                                    <tr><td>1</td><td>2</td><td>3</td><td class="herbi"> </td><td>5</td><td>6</td></tr>
+                                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                                </tbody>
+
+                            </table>
+                        </div>
+                        <div class="overview">
+                            <table class="tables">
+                                <thead><h2>day 111</h2></thead>
+                                <tbody>
+                                    <tr><td class="plant"> </td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                                    <tr><td>1</td><td class="carni"> </td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                                    <tr><td>1</td><td>2</td><td>3</td><td class="herbi"> </td><td>5</td><td>6</td></tr>
+                                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                                </tbody>
+
+                            </table>
+                        </div>
+                        <div class="overview">
+                            <table class="tables">
+                                <thead><h2>day 111</h2></thead>
+                                <tbody>
+                                    <tr><td class="plant"> </td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                                    <tr><td>1</td><td class="carni"> </td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                                    <tr><td>1</td><td>2</td><td>3</td><td class="herbi"> </td><td>5</td><td>6</td></tr>
+                                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                                </tbody>
+
+                            </table>
+                        </div>
+                        <div class="overview">
+                            <table class="tables">
+                                <thead><h2>day 111</h2></thead>
+                                <tbody>
+                                    <tr><td class="plant"> </td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                                    <tr><td>1</td><td class="carni"> </td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                                    <tr><td>1</td><td>2</td><td>3</td><td class="herbi"> </td><td>5</td><td>6</td></tr>
+                                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                                </tbody>
+
+                            </table>
+                        </div>
+                        <div class="overview">
+                            <table class="tables">
+                                <thead><h2>day 111</h2></thead>
+                                <tbody>
+                                    <tr><td class="plant"> </td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                                    <tr><td>1</td><td class="carni"> </td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                                    <tr><td>1</td><td>2</td><td>3</td><td class="herbi"> </td><td>5</td><td>6</td></tr>
+                                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="overview">
+                            <table class="tables">
+                                <thead><h2>day 111</h2></thead>
+                                <tbody>
+                                    <tr><td class="plant"> </td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                                    <tr><td>1</td><td class="carni"> </td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                                    <tr><td>1</td><td>2</td><td>3</td><td class="herbi"> </td><td>5</td><td>6</td></tr>
+                                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                                </tbody>
+
+                            </table>
+                        </div>
+                        <div class="overview">
+                            <table class="tables">
+                                <thead><h2>day 111</h2></thead>
+                                <tbody>
+                                    <tr><td class="plant"> </td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                                    <tr><td>1</td><td class="carni"> </td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                                    <tr><td>1</td><td>2</td><td>3</td><td class="herbi"> </td><td>5</td><td>6</td></tr>
+                                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                                </tbody>
+
+                            </table>
+                        </div>
+                        <div class="overview">
+                            <table class="tables">
+                                <thead><h2>day 111</h2></thead>
+                                <tbody>
+                                    <tr><td class="plant"> </td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                                    <tr><td>1</td><td class="carni"> </td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                                    <tr><td>1</td><td>2</td><td>3</td><td class="herbi"> </td><td>5</td><td>6</td></tr>
+                                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+
+        </div>
         <?php
         // put your code here
         ?>
