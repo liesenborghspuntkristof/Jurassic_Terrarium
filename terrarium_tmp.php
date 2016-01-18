@@ -10,6 +10,8 @@ if ($plants + $carnivores + $herbivores > $_SESSION["dimension"] ** 2) {
     exit(0);
 }
 
+
+
 for ($i=0; $i<$plants; $i++)
    $simMatrix[] = "P";
 for ($i=0; $i<$carnivores; $i++)
@@ -28,11 +30,15 @@ for ($i=0; $i < $_SESSION["dimension"]; $i++)
           $_SESSION["simData"][] = array(
               'dimension' => $_SESSION["dimension"],
               'day' => 0,
-              'posx' => $i,
-              'posy' => $j,
+              'positionx' => $i,
+              'positiony' => $j,
               'type' => $simMatrix[$i][$j],
-              'lifeforce' => 1, );
+              'life' => 1, );
        }       
+       
+       
+       
+       
 ?>
 <!DOCTYPE html>
 <html>
