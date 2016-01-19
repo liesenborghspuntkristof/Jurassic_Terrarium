@@ -13,6 +13,9 @@ if (isset($_GET["action"]) && $_GET["action"] == "simulate") {
     $carnivores = $_POST["startNrCarnivore"];
     $herbivores = $_POST["startNrHerbivore"];
 
+    if($_SESSION["dimension"]>20){
+        $_SESSION["dimension"]=20;
+    }
 //If the amount of plants+Carnivores+Herbivores is higher than the amount of squares in the matrix
 //then there is a message for the matrix being too full.
     if ($plants + $carnivores + $herbivores >= $_SESSION["dimension"] ** 2) {
@@ -40,5 +43,3 @@ if (isset($_GET["action"]) && $_GET["action"] == "simulate") {
 } 
 
 include_once 'Presentation/home.php';
-
-//blabla

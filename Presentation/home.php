@@ -55,7 +55,7 @@ and open the template in the editor.
                         <div class="form-group">
                             <label for="dimension" class="col-sm-6 form-control-label">Dimension:</label>
                             <div class="col-sm-6">
-                                <input type="number" class="form-control" id="dimension" name="dimension" placeholder="dimension" value="">
+                                <input type="number" class="form-control" id="dimension" name="dimension" placeholder="dimension" value="" max="20"> * Max 20 breed
                             </div>
                         </div>
                         <div class="form-group">
@@ -64,19 +64,19 @@ and open the template in the editor.
                                 <input type="number" class="form-control" id="startNrCarnivore"name="startNrCarnivore" placeholder="Start amount carnivores">
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label for="startNrPlants" class="col-sm-6 form-control-label">Start amount plants: </label>
-                            <div class="col-sm-6">
-                                <input type="number" class="form-control" id="startNrPlants"  name="startNrPlants" placeholder="Start amount plants">
-                            </div>
-                        </div>
+
                         <div class="form-group">
                             <label for="startNrHerbivore" class="col-sm-6 form-control-label">Start amount herbivores: </label>
                             <div class="col-sm-6">
                                 <input type="number" class="form-control" id="startNrHerbivore" name="startNrHerbivore" placeholder="Start amount herbivores">
                             </div>
                         </div>
-
+                        <div class="form-group">
+                            <label for="startNrPlants" class="col-sm-6 form-control-label">Start amount plants: </label>
+                            <div class="col-sm-6">
+                                <input type="number" class="form-control" id="startNrPlants"  name="startNrPlants" placeholder="Start amount plants">
+                            </div>
+                        </div>
                         <?php
                         if (isset($_GET['error']) && $_GET['error'] == "toocrowded") {
                             ?>
@@ -102,22 +102,22 @@ and open the template in the editor.
             </div>
             <div class="text-center">
                 <h1>Day 1</h1>
-                
+
                 <table class="tables text-center">
                     <tbody>
                         <?php for ($i = 0; $i < $_SESSION['dimension']; $i++) { ?>
                             <tr><?php for ($j = 0; $j < $_SESSION['dimension']; $j++) { ?>
                                     <td class="<?php echo $matrix[$i][$j]; ?>"></td>
-                                    <?php }
+                                <?php }
                                 ?>
                             </tr>
-                                <?php
-                            }
-                            ?>
+                            <?php
+                        }
+                        ?>
 
                     </tbody>
                 </table><br>
-                
+
                 <section>
                     <button type="button" class="btn btn-default prevnext" aria-label="Left Align">
                         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"> </span>
@@ -135,7 +135,7 @@ and open the template in the editor.
 
 
         </div>
-<?php // put your code here  ?>
+        <?php // put your code here  ?>
     </body>
 
 </html>
