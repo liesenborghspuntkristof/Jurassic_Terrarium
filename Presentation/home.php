@@ -50,7 +50,7 @@ and open the template in the editor.
 <h1>Jurassic Terrarium</h1>
 </header>
 <div class="wrapper">
-    <div class="row">
+    <div class="row container">
         <h1>Simulation parameters</h1>
         <div class="col-lg-4 col-lg-offset-1">
             <form class="form-horizontal" action="../home/generateWithParams" method="POST">

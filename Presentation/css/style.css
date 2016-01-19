@@ -5,11 +5,11 @@ and open the template in the editor.
 */
 /* 
     Created on : Jan 13, 2016, 2:12:19 PM
-    Author     : annemie.roelants
+    Author     : annemie.roelants & Inneke Van Mechelen
 */
 
+/*Base css for page*/
 body {
-    //background-image: url('../img/52.jpg');
     background-color: #9B7452;
     color: white;
 }
@@ -19,12 +19,12 @@ body {
 }
 .container {
     min-width: 80%;
-    //outline:1px solid red;
-    //background-color:white;
     padding: 1em 3em;
-    
-    
+    margin-left:auto;
+    margin-right:auto;
 }
+
+/*Header, containing log in and Jurassic H1*/
 header {
     background-color: #222;
     padding: 1% 7% 1% 0;
@@ -42,18 +42,15 @@ header h1 {
     text-align: center;
     font-size: 10em;
 }
+/*Log out link*/
 header a,
 header a:active,
 header a:hover,
 header a:visited {
     color: yellow;
 }
-.overview {
-    padding-right: 2em;
-}
-.container h1 {
-    margin-bottom: 2%;
-}
+
+/*Tables*/
 .tables{
     border:2px solid transparent;
     background-image: url('../img/background.png');
@@ -65,18 +62,15 @@ header a:visited {
     -webkit-border-image: url(../img/border_border.png) 48 39 round;
     -o-border-image: url(../img/border_border.png) 48 39 round;
     border-image: url(../img/border_border.png) 48 39 round;
-   margin-left:auto; 
+    margin-left:auto; 
     margin-right:auto;
     overflow:scroll;
 }
-.overview{
-    float:left;
-    margin:1em;
-     
-}
+
 .tables>tbody>tr>td {
     border: #1BA333 dashed thin;
 }
+/*Backgrounds tables*/
 .tables .plant {
     background-image: url('../img/Sprout.png');
     background-repeat: no-repeat;
@@ -98,17 +92,28 @@ header a:visited {
 
 td {width: 5em; height: 5em;display: inline-block;}
 
+/*Button non default*/
 .btn-primary {background-color: green; border-color: green;}
 
 .btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover {
     background-color: green; border-color: green;
 }
-
+/*Previous, next, overview buttons*/
 .prevnext{
     width: 6em;
 }
+/*Admin page settings*/
 #adminSettings
 {
     margin-bottom: 2%;
 }
-
+/*Overview tables, on pages with more than 1 table.*/
+.overview{
+    float:left;
+    margin:1em;
+    padding-right: 2em;
+}
+/*H1's in the container*/
+.wrapper h1 {
+    margin-bottom: 2%;
+}
