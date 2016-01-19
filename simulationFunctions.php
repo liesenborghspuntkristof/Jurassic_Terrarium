@@ -17,10 +17,8 @@ function spawnPlants($simulation) {
     
     $SPAWNPROBABILITY = 25; // percentage
 
-    $emptyFields = array_keys($simulation, null); 
-    print_r($emptyFields); 
+    $emptyFields = array_keys($simulation, null);    
     $emptyFields = array_fill_keys($emptyFields, null);
-    print_r($emptyFields); 
 
     for ($i=0; $i < count($simulation);$i++) 
         if (array_key_exists($i, $emptyFields) && mt_rand(0, 99) < $SPAWNPROBABILITY)
