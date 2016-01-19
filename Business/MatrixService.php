@@ -13,7 +13,7 @@ class MatrixService {
         for ($i = 0; $i < $herbivores; $i++) {
             $simMatrix[] = "herbi";
         }
-        for (count($simMatrix); $i < $dimension ** 2; $i++) {
+        for ($i=count($simMatrix); $i < $dimension ** 2; $i++) {
             $simMatrix[] = null;
         }
 
