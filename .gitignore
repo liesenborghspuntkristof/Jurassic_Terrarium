@@ -1,6 +1,0 @@
-git *.tmp
-*.temp
-**/nbproject/
-**/.idea/
-**/.id/
-terrarium_tmp.php

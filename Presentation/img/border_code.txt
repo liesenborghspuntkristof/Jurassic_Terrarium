@@ -1,6 +1,0 @@
-border-style: solid;
-border-width: 30px 25px 29px 26px;
--moz-border-image: url(border_border.png) 48 39 round;
--webkit-border-image: url(border_border.png) 48 39 round;
--o-border-image: url(border_border.png) 48 39 round;
-border-image: url(border_border.png) 48 39 round
