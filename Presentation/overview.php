@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
+@Author: Annemie Roelants & Inneke Van Mechelen
 -->
+
 <html>
     <head>
         <meta charset="UTF-8">
@@ -48,7 +47,7 @@ and open the template in the editor.
         </header>    
 
         <div class="container">
-            <a href ="index.php" class="btn btn-default btn-sm" >
+            <a href ="home.php" class="btn btn-default btn-sm" >
                             <span class=" glyphicon glyphicon-home" aria-hidden="true"></span> Home
                         </a>
             <h1>Overview</h1>

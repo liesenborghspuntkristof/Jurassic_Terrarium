@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
+@Author: Annemie Roelants & Inneke Van Mechelen
 -->
 
 <html>
@@ -52,7 +50,7 @@ and open the template in the editor.
 <div class="wrapper">
     <div class="row container">
         <h1>Simulation parameters</h1>
-        <div class="col-lg-4 col-lg-offset-1">
+        <div class="col-lg-6 col-lg-offset-1">
             <form class="form-horizontal" action="../home/generateWithParams" method="POST">
                 <div class="form-group">
                     <label for="dimension" class="col-sm-6 form-control-label">Dimension:</label>
