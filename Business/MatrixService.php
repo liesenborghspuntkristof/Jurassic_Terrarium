@@ -14,7 +14,7 @@ class MatrixService {
         for ($i=0; $i < $herbivores; $i++) {
             array_push($this->simMatrix,"herbi");
         }
-        for ($i=count($this->simMatrix); $i < $dimension ** 2; $i++) {
+        for ($i=count($this->simMatrix); $i < pow($dimension , 2); $i++) {
             $this->simMatrix[$i] = null;
         }
         //randomize order content
