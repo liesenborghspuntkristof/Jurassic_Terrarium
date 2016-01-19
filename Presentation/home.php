@@ -47,7 +47,7 @@ and open the template in the editor.
             </div>
             <h1>Jurassic Terrarium</h1>
         </header>
-        <div class="container">
+        <div class="wrapper">
             <div class="row">
                 <h1>Simulation parameters</h1>
                 <div class="col-lg-4 col-lg-offset-1">
@@ -100,9 +100,9 @@ and open the template in the editor.
                        </button>-->
                 </div>
             </div>
-            <div class="text-center" >
+            <div class="text-center">
                 <h1>Day 1</h1>
-
+                
                 <table class="tables text-center">
                     <tbody>
                         <?php for ($i = 0; $i < $_SESSION['dimension']; $i++) { ?>
@@ -117,6 +117,7 @@ and open the template in the editor.
 
                     </tbody>
                 </table><br>
+                
                 <section>
                     <button type="button" class="btn btn-default prevnext" aria-label="Left Align">
                         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"> </span>
