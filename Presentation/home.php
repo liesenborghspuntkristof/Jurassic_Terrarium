@@ -88,7 +88,7 @@ and open the template in the editor.
                         <div class="form-group">
                             <div class="col-sm-offset-6 col-sm-6">
                                 <button type="submit" class="btn btn-default">Simulate</button>
-                                <button type="submit" class="btn btn-default">Random Simulatie</button>
+                                <a href="HomeMatrixController.php" class="btn btn-default">Random Simulatie</a>
                             </div>
                         </div>
                     </form>
