@@ -44,7 +44,7 @@ private $matrixservice;
 
 //If the amount of plants+Carnivores+Herbivores is higher than the amount of squares in the matrix
 //then there is a message for the matrix being too full.
-            if ($plants + $carnivores + $herbivores >= $_SESSION["dimension"] ** 2) {
+            if ($plants + $carnivores + $herbivores >= pow($_SESSION["dimension"] , 2)) {
 
                 header("location: ../Presentation/home.php");
             }else {
