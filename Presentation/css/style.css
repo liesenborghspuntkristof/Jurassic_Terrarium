@@ -1,0 +1,114 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 13, 2016, 2:12:19 PM
+    Author     : annemie.roelants
+*/
+
+body {
+    //background-image: url('../img/52.jpg');
+    background-color: #9B7452;
+    color: white;
+}
+@font-face {
+    font-family: JurassicPark;
+    src: url('../fonts/JurassicPark.ttf');
+}
+.container {
+    min-width: 80%;
+    //outline:1px solid red;
+    //background-color:white;
+    padding: 1em 3em;
+    
+    
+}
+header {
+    background-color: #222;
+    padding: 1% 7% 1% 0;
+    text-align: right;
+    color: white;
+    border-bottom: 10px solid red;
+    margin-bottom: 2%;
+}
+header label {
+    color: white;
+    margin-left: 1em;
+}
+header h1 {
+    font-family: JurassicPark;
+    text-align: center;
+    font-size: 10em;
+}
+header a,
+header a:active,
+header a:hover,
+header a:visited {
+    color: yellow;
+}
+.overview {
+    padding-right: 2em;
+}
+.container h1 {
+    margin-bottom: 2%;
+}
+.tables{
+    border:2px solid transparent;
+    background-image: url('../img/background.png');
+    background-repeat: repeat;
+    border-collapse: separate;
+    border-style: solid;
+    border-width: 25px 25px 25px 25px;
+    -moz-border-image: url(../img/border_border.png) 48 39 round;
+    -webkit-border-image: url(../img/border_border.png) 48 39 round;
+    -o-border-image: url(../img/border_border.png) 48 39 round;
+    border-image: url(../img/border_border.png) 48 39 round;
+   margin-left:auto; 
+    margin-right:auto;
+    overflow:scroll;
+}
+.overview{
+    float:left;
+    margin:1em;
+     
+}
+.tables>tbody>tr>td {
+    border: #1BA333 dashed thin;
+}
+.tables .plant {
+    background-image: url('../img/Sprout.png');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center center;
+}
+.tables .carni {
+    background-image: url('../img/Velo.png');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center center;
+}
+.tables .herbi {
+    background-image: url('../img/Tric.png');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center center;
+}
+
+td {width: 5em; height: 5em;display: inline-block;}
+
+.btn-primary {background-color: green; border-color: green;}
+
+.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover {
+    background-color: green; border-color: green;
+}
+
+.prevnext{
+    width: 6em;
+}
+#adminSettings
+{
+    margin-bottom: 2%;
+}
+
