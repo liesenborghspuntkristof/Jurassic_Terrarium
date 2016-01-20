@@ -54,4 +54,9 @@ abstract class Organism implements Life {
     {
         $this->setLifeForce(0);
     }
+    
+    public function hasRightNeighbour() {
+        $loc = ($this->positionX + 1) % $_SESSION["dimension"];
+        return ($loc == 0)? false:true;
+}
 }
