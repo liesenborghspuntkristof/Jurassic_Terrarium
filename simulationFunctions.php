@@ -1,9 +1,13 @@
 <?php
 
-function hasRightNeighbour($loc) {
-    if ((($loc + 1) % $_SESSION["dimension"] != 0))
-        return true;
-}
+/* refactored into Organism.php
+ * @author Sven.Croon
+ * 
+ * function hasRightNeighbour($loc) {
+ *   if ((($loc + 1) % $_SESSION["dimension"] != 0))
+ *       return true;
+ * }
+ */
 
 function rightNeighbour($simulation, $loc) {
 
