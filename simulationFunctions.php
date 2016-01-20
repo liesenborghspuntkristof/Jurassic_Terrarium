@@ -62,9 +62,10 @@ function eat($simulation) {
     }
     //eat carnivores
     foreach ($Clocation as $carnivore) {
-        if (hasRightNeighbour($carnivore) && rightNeighbour($simulation, $carnivore) == "H")
+        if (hasRightNeighbour($carnivore) && rightNeighbour($simulation, $carnivore) == "H") {
             $simulation[$carnivore]['life'] += $simulation[$carnivore + 1]['life'];
-        $simulation[$carnivore + 1] = null;
+            $simulation[$carnivore + 1] = null;
+        }
     }
 
     return $simulation;
@@ -86,7 +87,7 @@ function love($simulation) {
             if (count($Elocation) > 0) {
                 $random = array_rand($Elocation, 1);
                 $simulation[$random]['type'] = 'H';
-                $simulation[$random]['life'] = 0;
+                $simulation[$random]['life'] = 10;
                 unset($Elocation[$random]);
             }
         }
@@ -95,11 +96,31 @@ function love($simulation) {
 }
 
 function fight($simulation) {
+    $Clocation = array();
 
+    foreach ($simulation as $location => $key) {
+
+        if ($key['type'] == 'C')
+            $Clocation[] = $location;
+    }
+
+    foreach ($Clocation as $carnivore) {
+        if (hasRightNeighbour($carnivore) && rightNeighbour($simulation, $carnivore) == "C" && $simulation[$carnivore]['life'] != $simulation[$carnivore + 1]['life']) {
+            if ($simulation[$carnivore]['life'] > $simulation[$carnivore + 1]['life']) {
+                $simulation[$carnivore]['life'] += $simulation[$carnivore + 1]['life'];
+                $simulation[$carnivore + 1] = null;
+            } else {
+                $simulation[$carnivore + 1]['life'] += $simulation[$carnivore]['life'];
+                $simulation[$carnivore] = null;
+            }
+        }
+    }
     return $simulation;
 }
 
 function move($simulation) {
-
+    
+    
+    
     return $simulation;
 }
