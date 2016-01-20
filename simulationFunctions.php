@@ -1,4 +1,5 @@
 <?php
+require 'debugger.php';
 
 function hasRightNeighbour($loc) {
     if ((($loc + 1) % $_SESSION["dimension"] != 0))
@@ -20,6 +21,7 @@ function generateDay0() {
         $startSimArray[] = array('type' => 'H', 'life' => 10);
     for ($i = count($startSimArray); $i < $_SESSION["dimension"] ** 2; $i++)
         $startSimArray[] = null;
+    
     shuffle($startSimArray);
 
     return $startSimArray;
@@ -120,7 +122,36 @@ function fight($simulation) {
 
 function move($simulation) {
     
-    
+//    $Hlocation = array();
+//    $Clocation = array();
+//    foreach ($simulation as $location => $key) {
+//        if ($key['type'] == 'H')
+//            $Hlocation[] = $location;
+//
+//        if ($key['type'] == 'C')
+//            $Clocation[] = $location;
+//        if ($key == null)
+//            $Elocation[] = $location;
+//    }
+//    
+//    foreach ($Clocation as $carnivore) {
+//        if (hasRightNeighbour($carnivore) && rightNeighbour($simulation, $carnivore) == null) {
+//            $moveCandidates = array($carnivore - $_SESSION["dimension"], $carnivore + $_SESSION["dimension"],$carnivore - 1, $carnivore + 1);
+//            
+//            $moveloc = array_rand($moveCandidates, 1);
+//            if (in_array($moveloc, $Elocation)) {
+//                    $simulation[$moveloc] = $simulation[$carnivore]; 
+//                    $simulation[$carnivore] = null;
+//                    
+//            }
+//        }
+//    }
+//    foreach ($Hlocation as $herbivore) {
+//        if (hasRightNeighbour($herbivore) && rightNeighbour($simulation, $herbivore) == null) {
+//            
+//        }
+//        
+//    }
     
     return $simulation;
 }
