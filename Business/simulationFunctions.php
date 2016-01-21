@@ -47,8 +47,8 @@ function spawnOnePlant($simulation) {
     }
     if (count($Elocation) > 0) {
         $random = array_rand($Elocation, 1);
-        $simulation[$random]['type'] = 'P';
-        $simulation[$random]['life'] = 1;
+        $simulation[$Elocation[$random]]['type'] = 'P';
+        $simulation[$Elocation[$random]]['life'] = 1;
     }
     return $simulation;
 }
@@ -96,10 +96,12 @@ function love($simulation) {
         if (hasRightNeighbour($herbivore) && rightNeighbour($simulation, $herbivore) == "H" && !$_SESSION["action"][$herbivore]) {
             if (count($Elocation) > 0) {
                 $_SESSION["action"][$herbivore] = true;
-                $_SESSION["action"][$herbivore + 1] = true;
+//                $_SESSION["action"][$herbivore + 1] = true;     //action voor paar slachtoffer
                 $random = array_rand($Elocation, 1);
-                $simulation[$random]['type'] = 'H';
-                $simulation[$random]['life'] = 10;
+                $randomEmpty = $Elocation[$random];
+                $simulation[$randomEmpty]['type'] = 'H';
+                $simulation[$randomEmpty]['life'] = 10;
+//                $_SESSION["action"][$randomEmpty] = true;      //baby herbivoor niet paren
                 unset($Elocation[$random]);
             }
         }
