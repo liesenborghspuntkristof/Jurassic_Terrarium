@@ -14,6 +14,7 @@ require_once(SYSTEM_PATH . 'controller/input.php');
 require_once(APPLICATION_PATH . 'controllers/HomeController.php');
 require_once(APPLICATION_PATH . 'controllers/AdminController.php');
 require_once (APPLICATION_PATH .'MatrixService.php');
+require_once (APPLICATION_PATH .'terrarium_temp.php');
 require_once(SYSTEM_PATH . 'controller/Loader.php');
 require_once(SYSTEM_PATH . 'controller/FrontController.php');
 

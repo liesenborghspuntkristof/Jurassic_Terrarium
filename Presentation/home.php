@@ -105,10 +105,12 @@
 
         <table class="tables text-center">
             <tbody>
-            <?php for ($i = 0; $i < $_SESSION['dimension']; $i++) { ?>
+            <?php var_dump($days);
+            
+            for ($i = 0; $i < $_SESSION['dimension']; $i++) { ?>
             <tr><?php for ($j = 0; $j < $_SESSION['dimension']; $j++) { ?>
 
-                    <td class="<?php echo $_SESSION['matrix'][$i][$j]; ?>"></td>
+                    <td class="<?php echo $firstDay[$i][$j]; ?>"></td>
                 <?php }?>
             </tr>
             <?php }?>

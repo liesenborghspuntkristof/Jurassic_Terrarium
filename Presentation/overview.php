@@ -52,7 +52,7 @@
             </a>
             <h1>Overview</h1>
 
-            <?php foreach ($simMatrix as $day) { ?>
+            <?php foreach ($matrices as $day) { ?>
                 <div class="overview">
                     <table class="tables">
                         <thead><h2>Day: <?php echo $day[0] + 1 ?></h2></thead><tbody>
