@@ -1,4 +1,6 @@
 <?php
+
+
 class HomeController extends Controller{
 
 private $matrixservice;
@@ -56,7 +58,9 @@ private $matrixservice;
         }
 
     public function showUserOverview(){
-
+        $overview = new test();
+        $matrices=$overview->simulate();
+        header("location: ../Presentation/overview.php");
     }
     public function showToday(){
 

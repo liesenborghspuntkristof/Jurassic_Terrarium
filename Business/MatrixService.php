@@ -24,7 +24,7 @@ class MatrixService {
 
         //turns into 2dimensional array
         $this->simMatrix = array_chunk($this->simMatrix, $dimension);
-        $this->matrixObjects($dimension, 0);
+        //$this->matrixObjects($dimension, 0);
 
         //$this->simStorage($this->simMatrix, $dimension);
         return $this->simMatrix;
