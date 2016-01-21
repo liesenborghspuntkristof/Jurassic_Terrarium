@@ -97,9 +97,9 @@ function love($simulation) {
             if (count($Elocation) > 0) {
                 $_SESSION["action"][$herbivore] = true;
 //                $_SESSION["action"][$herbivore + 1] = true;     //action voor paar slachtoffer
-                $random = array_rand($Elocation, 1);
-                $simulation[$random]['type'] = 'H';
-                $simulation[$random]['life'] = 10;
+                $random = array_rand($Elocation, 1);                
+                $simulation[$Elocation[$random]]['type'] = 'H';
+                $simulation[$Elocation[$random]]['life'] = 10;
                 unset($Elocation[$random]);
             }
         }
