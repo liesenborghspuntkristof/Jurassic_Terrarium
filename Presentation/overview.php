@@ -8,8 +8,8 @@
         <meta charset="UTF-8">
         <title>Jurrasic Terrarium Home</title>
         <!-- Bootstrap -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="/Jurassic_Terrarium/Presentation/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/Jurassic_Terrarium/Presentation/css/style.css" rel="stylesheet" type="text/css"/>
         <link href='https://fonts.googleapis.com/css?family=Roboto:100,400' rel='stylesheet' type='text/css'>
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -26,7 +26,7 @@
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="js/bootstrap.min.js"></script>
 
-        <header
+        <header>
             <div id="login">
                 <form class="form-inline">
 
@@ -52,14 +52,19 @@
             </a>
             <h1>Overview</h1>
 
-            <?php foreach ($matrices as $day) { ?>
+            <?php 
+            $daynumber = 1;
+            foreach ($days as $day) { 
+                ?>
                 <div class="overview">
                     <table class="tables">
-                        <thead><h2>Day: <?php echo $day[0] + 1 ?></h2></thead><tbody>
-                            <?php for ($i = 0; $i < count($dimension); $i++) { ?>
+                        <thead><h2>Day: <?php echo $daynumber ?></h2></thead>
+                    
+                    <tbody>
+                            <?php for ($i = 0; $i < $_SESSION['dimension']; $i++) { ?>
                                 <tr><?php
-                                    for ($j = 0; $j < count($dimension); $j++) {
-                                        ?><tr><td class="<?php echo $type ?>"> </td><?php }
+                                    for ($j = 0; $j < $_SESSION['dimension']; $j++) {
+                                        ?><td class="<?php echo $day[$i][$j]['type'] ?>"> </td><?php }
                                     ?>
                                 </tr><?php }
                                 ?>
@@ -68,6 +73,7 @@
             </div>
 
             <?php
+            $daynumber++;
             }
             ?>
         </div>

@@ -1,17 +1,11 @@
 <?php
 
-function phpAlert($msg) {
-    echo ('<script type="tect/javascript">alert("' . $msg . '");</script>');
-}
-
 class HomeController extends Controller {
-
-    private $matrixservice;
-
-    public function __construct() {
-        parent::__construct();
-        $this->matrixservice = new MatrixService();
-    }
+    /* public function __construct() {
+      parent::__construct();
+      $overview = new test;
+      $this->days = $overview->simulate();
+      } */
 
     public function index() {
 
@@ -28,8 +22,10 @@ class HomeController extends Controller {
 
 
         $matrix = new test();
-        $days = $matrix->simulate();
-        $daynumber = 0;
+        $_SESSION['days'] = $matrix->simulate();
+        $days = $_SESSION['days'];
+        $_SESSION['daynumber'] = 0;
+        $daynumber = $_SESSION['daynumber'];
         $day = $days[$daynumber];
         include 'Presentation/home.php';
     }
@@ -39,37 +35,36 @@ class HomeController extends Controller {
     }
 
     public function generateWithParams() {
-        phpAlert("in functie");
 
-
-//the posted value from dimensions is inserted into the session variable
+        //the posted value from dimensions is inserted into the session variable
 
         $_SESSION["dimension"] = $_POST["dimension"];
         $_SESSION["startNrPlants"] = $_POST["startNrPlants"];
         $_SESSION["startNrCarnivores"] = $_POST["startNrCarnivore"];
         $_SESSION["startNrHerbivores"] = $_POST["startNrHerbivore"];
 
-//If the amount of plants+Carnivores+Herbivores is higher than the amount of squares in the matrix
-//then there is a message for the matrix being too full.
+        //If the amount of plants+Carnivores+Herbivores is higher than the amount of squares in the matrix
+        //then there is a message for the matrix being too full.
         if ($_SESSION["startNrPlants"] + $_SESSION["startNrCarnivores"] + $_SESSION["startNrHerbivores"] >= pow($_SESSION["dimension"], 2)) {
 
-            include 'Presentation/home.php';
+            include_once 'Presentation/home.php';
             ;
         } else {
             $matrix = new test();
-            $days = $matrix->simulate();
-            $daynumber = 0;
+            $_SESSION['days'] = $matrix->simulate();
+            $days = $_SESSION['days'];
+            $_SESSION['daynumber'] = 0;
+            $daynumber = $_SESSION['daynumber'];
             $day = $days[$daynumber];
-            include 'Presentation/home.php';
+            include_once 'Presentation/home.php';
 
             //header("location: ../Presentation/home.php");
         }
     }
 
     public function showUserOverview() {
-        $overview = new test();
-        $matrices = $overview->simulate();
-        header("location: ../Presentation/overview.php");
+       $days = $_SESSION['days'];
+       include_once 'Presentation/overview.php';
     }
 
     public function showToday() {
@@ -77,11 +72,19 @@ class HomeController extends Controller {
     }
 
     public function showNextDay() {
-        
+        $_SESSION['daynumber'] = $_SESSION['daynumber'] + 1;
+        $daynumber = $_SESSION['daynumber'];
+        $days = $_SESSION['days'];
+        $day = $days[$daynumber];
+        include_once 'C:/xampp/htdocs/Jurassic_Terrarium/Presentation/home.php';
     }
 
     public function showPreviousDay() {
-        
+        $_SESSION['daynumber'] = $_SESSION['daynumber'] - 1;
+        $daynumber = $_SESSION['daynumber'];
+        $days = $_SESSION['days'];
+        $day = $days[$daynumber];
+        include_once 'C:/xampp/htdocs/Jurassic_Terrarium/Presentation/home.php';
     }
 
 }

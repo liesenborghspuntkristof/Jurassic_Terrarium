@@ -2,6 +2,7 @@
 require 'simulationFunctions.php';
 
 class test {
+    
 
     public function simulate() {
 
@@ -14,7 +15,7 @@ class test {
             exit(0);
         }
         $day = 0;
-        var_dump($_SESSION["startNrHerbivores"]);
+        
         do {
             for ($i = 0; $i < $_SESSION["dimension"] ** 2; $i++)
                 $_SESSION["action"][] = false;
@@ -43,7 +44,7 @@ class test {
             $simulation[$day] = love($simulation[$day]);
             $simulation[$day] = fight($simulation[$day]);
             $simulation[$day] = move($simulation[$day]);
-            $simulation[$day] = spawnPlants($simulation[$day]);
+            $simulation[$day] = spawnOnePlant($simulation[$day]);
 
             $simMatrix[$day] = array_chunk($simulation[$day], $_SESSION["dimension"]);
             for ($i = 0; $i < $_SESSION["dimension"]; $i++) {
