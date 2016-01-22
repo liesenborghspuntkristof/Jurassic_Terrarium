@@ -1,5 +1,9 @@
 <?php
 
+function phpAlert($msg) {
+    echo ('<script type="tect/javascript">alert("' . $msg . '");</script>');
+}
+
 class HomeController extends Controller {
 
     private $matrixservice;
@@ -11,21 +15,23 @@ class HomeController extends Controller {
 
     public function index() {
 
-        $_SESSION["dimension"] = 6;
-        $plants = rand(0, 36);
-        $carnivores = rand(0, 36);
-        $herbivores = rand(0, 36);
+        $_POST["dimension"] = 6;
+        $_POST["startNrPlants"] = rand(0, 36);
+        $_POST["startNrCarnivore"] = rand(0, 36);
+        $_POST["startNrHerbivore"] = rand(0, 36);
 
-        while ($plants + $carnivores + $herbivores >= 36) {
-            $plants = rand(0, 36);
-            $carnivores = rand(0, 36);
-            $herbivores = rand(0, 36);
+        while ($_POST["startNrPlants"] + $_POST["startNrCarnivore"] + $_POST["startNrHerbivore"] >= 36) {
+            $_POST["startNrPlants"] = rand(0, 36);
+            $_POST["startNrCarnivore"] = rand(0, 36);
+            $_POST["startNrHerbivore"] = rand(0, 36);
         };
 
 
-       $_SESSION['matrix']= $this->matrixservice->createStartMatrix($plants, $carnivores, $herbivores, $_SESSION["dimension"]);
-
-        header("location: Presentation/home.php");
+        $matrix = new test();
+        $days = $matrix->simulate();
+        $daynumber = 0;
+        $day = $days[$daynumber];
+        include 'Presentation/home.php';
     }
 
     public function logIn() {
@@ -33,27 +39,30 @@ class HomeController extends Controller {
     }
 
     public function generateWithParams() {
+        phpAlert("in functie");
 
 
 //the posted value from dimensions is inserted into the session variable
 
         $_SESSION["dimension"] = $_POST["dimension"];
-        $plants = $_POST["startNrPlants"];
-        $carnivores = $_POST["startNrCarnivore"];
-        $herbivores = $_POST["startNrHerbivore"];
+        $_SESSION["startNrPlants"] = $_POST["startNrPlants"];
+        $_SESSION["startNrCarnivores"] = $_POST["startNrCarnivore"];
+        $_SESSION["startNrHerbivores"] = $_POST["startNrHerbivore"];
 
 //If the amount of plants+Carnivores+Herbivores is higher than the amount of squares in the matrix
 //then there is a message for the matrix being too full.
-        if ($plants + $carnivores + $herbivores >= pow($_SESSION["dimension"], 2)) {
+        if ($_SESSION["startNrPlants"] + $_SESSION["startNrCarnivores"] + $_SESSION["startNrHerbivores"] >= pow($_SESSION["dimension"], 2)) {
 
-            header("location: ../Presentation/home.php");
+            include 'Presentation/home.php';
+            ;
         } else {
-
             $matrix = new test();
             $days = $matrix->simulate();
-            $firstDay = $days[0];
+            $daynumber = 0;
+            $day = $days[$daynumber];
+            include 'Presentation/home.php';
 
-            header("location: ../Presentation/home.php");
+            //header("location: ../Presentation/home.php");
         }
     }
 

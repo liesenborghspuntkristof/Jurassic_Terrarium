@@ -9,8 +9,8 @@
     <meta charset="UTF-8">
     <title>Jurrasic Terrarium Home</title>
     <!-- Bootstrap -->
-    <link href="../Presentation/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="/Jurassic_Terrarium/Presentation/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/Jurassic_Terrarium/Presentation/css/style.css" rel="stylesheet" type="text/css" />
     <link href='https://fonts.googleapis.com/css?family=Roboto:100,400' rel='stylesheet' type='text/css'>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -51,7 +51,7 @@
     <div class="row container">
         <h1>Simulation parameters</h1>
         <div class="col-lg-6 col-lg-offset-1">
-            <form class="form-horizontal" action="../home/generateWithParams" method="POST">
+            <form class="form-horizontal" action="Home/generateWithParams" method="POST">
                 <div class="form-group">
                     <label for="dimension" class="col-sm-6 form-control-label">Dimension:</label>
                     <div class="col-sm-6">
@@ -61,7 +61,7 @@
                 <div class="form-group">
                     <label for="startNrCarnivore" class="col-sm-6 form-control-label">Start amount carnivores: </label>
                     <div class="col-sm-6">
-                        <input type="number" class="form-control" id="startNrCarnivore"name="startNrCarnivore" placeholder="Start amount carnivores">
+                        <input type="number" class="form-control" id="startNrCarnivore" name="startNrCarnivore" placeholder="Start amount carnivores">
                     </div>
                 </div>
 
@@ -105,12 +105,12 @@
 
         <table class="tables text-center">
             <tbody>
-            <?php var_dump($days);
+            <?php 
             
             for ($i = 0; $i < $_SESSION['dimension']; $i++) { ?>
             <tr><?php for ($j = 0; $j < $_SESSION['dimension']; $j++) { ?>
 
-                    <td class="<?php echo $firstDay[$i][$j]; ?>"></td>
+                    <td class="<?php echo $day[$i][$j]['type']; ?>"></td>
                 <?php }?>
             </tr>
             <?php }?>
@@ -131,9 +131,6 @@
                 <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> <br>Overview</a>
         </section>
     </div>
-
-
-
 </div>
 
 </body>

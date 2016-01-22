@@ -1,10 +1,10 @@
 <?php
 require 'simulationFunctions.php';
 
-
 class test {
 
-    function simulate() {
+    public function simulate() {
+
         $_SESSION["dimension"] = $_POST["dimension"];
         $_SESSION["startNrPlants"] = $_POST["startNrPlants"];
         $_SESSION["startNrCarnivores"] = $_POST["startNrCarnivore"];
@@ -14,7 +14,7 @@ class test {
             exit(0);
         }
         $day = 0;
-
+        var_dump($_SESSION["startNrHerbivores"]);
         do {
             for ($i = 0; $i < $_SESSION["dimension"] ** 2; $i++)
                 $_SESSION["action"][] = false;
@@ -74,11 +74,11 @@ class test {
         <title></title>
     </head>
     <body>       
-<?php
-/* echo '<pre>';
-  print_r($simMatrix);
-  print_r($_SESSION["simData"]);
-  echo '</pre>' */
-?>
+        <?php
+        /* echo '<pre>';
+          print_r($simMatrix);
+          print_r($_SESSION["simData"]);
+          echo '</pre>' */
+        ?>
     </body>
 </html>

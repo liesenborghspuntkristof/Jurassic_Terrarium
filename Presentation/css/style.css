@@ -66,19 +66,19 @@ header a:visited {
     border: #1BA333 dashed thin;
 }
 /*Backgrounds tables*/
-.tables .plant {
+.tables .P {
     background-image: url('../img/Sprout.png');
     background-repeat: no-repeat;
     background-size: 60%;
     background-position: center center;
 }
-.tables .carni {
+.tables .C {
     background-image: url('../img/Velo.png');
     background-repeat: no-repeat;
     background-size: 60%;
     background-position: center center;
 }
-.tables .herbi {
+.tables .H {
     background-image: url('../img/Tric.png');
     background-repeat: no-repeat;
     background-size: 60%;
