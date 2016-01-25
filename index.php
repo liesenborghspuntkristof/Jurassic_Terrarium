@@ -8,17 +8,16 @@
 define('APPLICATION_PATH','Business/');
 define('SYSTEM_PATH','Business/system/');
 
-
-require_once(SYSTEM_PATH . 'controller/Controller.php');
-require_once(SYSTEM_PATH . 'controller/input.php');
-require_once(APPLICATION_PATH . 'controllers/HomeController.php');
-require_once(APPLICATION_PATH . 'controllers/AdminController.php');
-require_once (APPLICATION_PATH .'MatrixService.php');
-require_once(SYSTEM_PATH . 'controller/Loader.php');
-require_once(SYSTEM_PATH . 'controller/FrontController.php');
-
-
-
-
-$frontController = new FrontController();
-$frontController->run();
+function pr($var){
+    echo '<pre>';
+    var_dump($var);
+    echo '</pre>';
+}
+foreach(scandir('C:\xampp\htdocs\Jurassic_Terrarium\Entities') as $class){
+    if($class == '.' || $class == ".."){
+        continue;
+    }else{
+        include('Entities/' . $class);
+    }
+}
+include ('Business/OO_CoreService.php');

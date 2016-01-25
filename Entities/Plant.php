@@ -13,7 +13,7 @@
  */
 class Plant extends Organism {
     public function __construct($positionX, $positionY) {
-        Parent::__construct($positionX,$positionY);
+        Parent::__construct($positionX, $positionY);
         $this->setLifeforce(1);
     }
 }

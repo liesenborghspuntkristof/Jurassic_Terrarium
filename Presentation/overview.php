@@ -9,7 +9,7 @@
         <title>Jurrasic Terrarium Home</title>
         <!-- Bootstrap -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="css/jurassic_terrarium.css" rel="stylesheet" type="text/css"/>
         <link href='https://fonts.googleapis.com/css?family=Roboto:100,400' rel='stylesheet' type='text/css'>
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -26,17 +26,17 @@
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="js/bootstrap.min.js"></script>
 
-        <header
+        <header>
             <div id="login">
                 <form class="form-inline">
 
                     <div class="form-group">
                         <label for="Naam">Username</label>
-                        <input type="text" class="form-control" id="naam" name="naam" placeholder="Naam">
+                        <input type="text" class="form-control" id="username" name="username" placeholder="Naam">
                     </div> 
                     <div class="form-group">
                         <label for="Naam">Wachtwoord</label>
-                        <input type="password" class="form-control" id="naam" name="wachtwoord" placeholder="Wachtwoord">
+                        <input type="password" class="form-control" id="pwd" name="pwd" placeholder="Wachtwoord">
                     </div>
                     <div class="form-group">
                         <button type="submit" class="btn btn-default">Submit</button>
@@ -231,8 +231,5 @@
 
 
                     </div>
-                    <?php
-                    // put your code here
-                    ?>
                     </body>
                     </html>
