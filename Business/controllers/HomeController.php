@@ -47,8 +47,8 @@ class HomeController extends Controller {
         //then there is a message for the matrix being too full.
         if ($_SESSION["startNrPlants"] + $_SESSION["startNrCarnivores"] + $_SESSION["startNrHerbivores"] >= pow($_SESSION["dimension"], 2)) {
 
-            include_once 'Presentation/home.php';
-            ;
+            include 'Presentation/home.php';
+
         } else {
             $matrix = new test();
             $_SESSION['days'] = $matrix->simulate();
@@ -56,7 +56,7 @@ class HomeController extends Controller {
             $_SESSION['daynumber'] = 0;
             $daynumber = $_SESSION['daynumber'];
             $day = $days[$daynumber];
-            include_once 'Presentation/home.php';
+            include 'Presentation/home.php';
 
             //header("location: ../Presentation/home.php");
         }
@@ -64,7 +64,7 @@ class HomeController extends Controller {
 
     public function showUserOverview() {
        $days = $_SESSION['days'];
-       include_once 'Presentation/overview.php';
+       include 'Presentation/overview.php';
     }
 
     public function showToday() {
@@ -76,7 +76,7 @@ class HomeController extends Controller {
         $daynumber = $_SESSION['daynumber'];
         $days = $_SESSION['days'];
         $day = $days[$daynumber];
-        include_once 'C:/xampp/htdocs/Jurassic_Terrarium/Presentation/home.php';
+        include 'Presentation/home.php';
     }
 
     public function showPreviousDay() {
@@ -84,7 +84,7 @@ class HomeController extends Controller {
         $daynumber = $_SESSION['daynumber'];
         $days = $_SESSION['days'];
         $day = $days[$daynumber];
-        include_once 'C:/xampp/htdocs/Jurassic_Terrarium/Presentation/home.php';
+        include 'Presentation/home.php';
     }
 
 }

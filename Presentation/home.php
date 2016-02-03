@@ -9,8 +9,8 @@
         <meta charset="UTF-8">
         <title>Jurrasic Terrarium Home</title>
         <!-- Bootstrap -->
-        <link href="/Jurassic_Terrarium/Presentation/css/bootstrap.min.css" rel="stylesheet">
-        <link href="/Jurassic_Terrarium/Presentation/css/style.css" rel="stylesheet" type="text/css" />
+        <link href="Presentation/css/bootstrap.min.css" rel="stylesheet type" ="text/css" rel="stylesheet" />
+        <link href="Presentation/css/style.css" rel="stylesheet" type="text/css" />
         <link href='https://fonts.googleapis.com/css?family=Roboto:100,400' rel='stylesheet' type='text/css'>
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -88,7 +88,7 @@
                         <div class="form-group">
                             <div class="col-sm-offset-6 col-sm-6">
                                 <button type="submit" class="btn btn-default">Simulate</button>
-                                <a href="../../Jurassic_Terrarium/" class="btn btn-default">Random Simulatie</a>
+                                <a href="home" class="btn btn-default">Random Simulatie</a>
                             </div>
                         </div>
                     </form>
@@ -117,19 +117,19 @@
                 </table><br>
 
                 <section>
-                    <form method="post" action="C:/xampp/htdocs/Jurassic_Terrarium/Business/controllers/Home/showPreviousDay">
+                    <form method="post" action="home/showPreviousDay">
                         <button  type="submit" class="btn btn-default prevnext" aria-label="Left Align">
                             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"> </span>
                             <br>Previous
                         </button>
                     </form>
-                    <form method="post" action="C:/xampp/htdocs/Jurassic_Terrarium/Business/controllers/Home/showNextDay">
+                    <form method="post" action="home/showNextDay">
                         <button type="submit" class="btn btn-default prevnext" aria-label="Left Align">
                             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                             <br>Next
                         </button>
                     </form>
-                    <form method="post" action="Home/showUserOverview">
+                    <form method="post" action="home/showUserOverview">
                         <button type="submit" class="btn btn-default prevnext">
                             <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> <br>Overview
                         </button>

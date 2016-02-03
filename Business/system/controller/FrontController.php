@@ -3,7 +3,7 @@
 class FrontController
 {
     const DEFAULT_CONTROLLER = "Home";
-    const DEFAULT_ACTION = "index";
+    const DEFAULT_ACTION = "showNextDay";
     const CONTROLLER_PATH = 'controllers';
     const CONTROLLER_FILE = 'index.php';
 
